@@ -7,5 +7,5 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 public class MinhaConfiguration {
 
-    
+
 }
