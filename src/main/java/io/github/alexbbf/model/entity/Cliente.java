@@ -1,5 +1,7 @@
 package io.github.alexbbf.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Objects;
@@ -17,6 +19,8 @@ public class Cliente {
     @Column(nullable = false, length = 11)
     private String cpf;
 
+    @Column(name = "data_cadastro", updatable = false)
+    @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCadastro;
 
     @PrePersist
