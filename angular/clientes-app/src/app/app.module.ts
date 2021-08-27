@@ -3,17 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HellComponent } from './hello/hello.component';
-import { CursoAngularComponent } from './curso-angular/curso-angular.component';
 
+import { TemplateModule } from './template/template.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent, HellComponent, CursoAngularComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TemplateModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
